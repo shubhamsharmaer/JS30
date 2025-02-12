@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    background-color: #16dfa34a;
+    background-color: #16dfa3;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
@@ -14,60 +14,48 @@ body {
 }
 
 .clock-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    width: 400px;
+    height: 300px;
 }
 
 .clock {
-    position: absolute;
-    z-index: 1;
+    background-color: #fff;
     height: 150px;
     width: 150px;
+    padding: 1.2rem;
     border-radius: 50%;
-}
-
-.clock-ring {
-    background-color: #fff;
-}
-
-.inner-ring {
-    position: absolute;
-    z-index: 10;
-    top: 100px;
-    left: 10px;
-    height: 130px;    
-    width: 130px;
-    background-color: #16dfa3
 }
 
 .hand {
     position: absolute;
-    z-index: 20;
     top: 50%;
-    left: 50%;
     border-radius: 25px;
     height: 3px;
-    width: 50px;
+    width: 60px;
     background-color: black;
     transform-origin: 100%;
     transform: rotate(90deg);
-    /* transition-timing-function: ; */
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
 .hh-hand {
-    background-color: red;
-    width: 60px;
+    background-color: black;
+    /* width: 60px; */
 }
 
 .mm-hand {
-    background-color: greenyellow;
+    background-color: black;
     height: 2px;
-    width: 40px;
+    /* width: 40px; */
 }
 
 .ss-hand {
-    background-color: burlywood;
+    background-color: #333;
     height: 1px;
-    width: 30px;
+    /* width: 30px; */
 }
